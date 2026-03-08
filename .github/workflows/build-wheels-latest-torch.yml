@@ -26,10 +26,10 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: ["windows-2022", "ubuntu-22.04"]
-        pyver: ["3.10", "3.11", "3.12", "3.13"]
+        os: ["windows-2022"]
+        pyver: ["3.12"]
         cuda: ["12.8.1"]
-        torchver: ["2.9.0"]
+        torchver: ["2.10.0"]
     defaults:
       run:
         shell: pwsh
